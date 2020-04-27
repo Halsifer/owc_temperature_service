@@ -12,9 +12,10 @@
     "IIS Express": {
       "commandName": "IISExpress",
       "launchBrowser": true,
-      "launchUrl": "weatherforecast",
+      "launchUrl": "swagger",
       "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development"
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "ASPNETCORE_ConnectionStrings__TemperatureConnection": "server=localhost;database=owc_temp_test;Uid=root;"
       }
     },
     "TemperatureService": {
@@ -22,7 +23,8 @@
       "launchBrowser": true,
       "launchUrl": "swagger",
       "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development"
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "ASPNETCORE_ConnectionStrings__TemperatureConnection": "server=localhost;database=owc_temp_test;Uid=root;"
       },
       "applicationUrl": "http://localhost:5000"
     }

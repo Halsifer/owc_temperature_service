@@ -14,9 +14,11 @@ namespace TemperatureService.Repository
     {
         private readonly IConfiguration configuration;
 
-        private const string CONNECTION_STRING_KEY = "TemperatureConnectionString";
+        private const string CONNECTION_STRING_KEY = "TemperatureConnection";
 
-        private string ConnectionString => configuration.GetConnectionString(CONNECTION_STRING_KEY);
+        private string ConnectionString => 
+            configuration.GetConnectionString(CONNECTION_STRING_KEY) ?? 
+            throw new NullReferenceException($"ConnectionString '{CONNECTION_STRING_KEY}' is not defined");
 
         public TemperatureRepo(IConfiguration configuration)
         {
