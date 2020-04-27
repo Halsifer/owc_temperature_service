@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "TemperatureDatabases": {
+      "commandName": "Project",
+      "commandLineArgs": "\"server=localhost;database=owc_temp_test;Uid=root;\""
+    }
+  }
+}
