@@ -13,4 +13,4 @@ Once databases are deployed, set the environment variable `ConnectionStrings__Te
 cd ./TemperatureService
 dotnet run
 ```
-There is a swagger doc with all available apis and descriptions at http://<hostname>:<port>/swagger
+There is a swagger doc with all available apis and descriptions at `http://<hostname>:<port>/swagger`
